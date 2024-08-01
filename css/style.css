@@ -42,4 +42,37 @@ body, html,h1,h2,h3,h4,h5,h6,p {
     font-weight: bold;      
 }
 
+.section-B{    
+    display: flex;        
+    flex-direction: column;
+    justify-content: center;        
+    border-right: 1px solid #fff;    
+    color: #fff;  
+    width: 50%;  
+    align-items: center; 
+}
+.section-B .pin-box{    
+    display: flex;            
+    justify-content: center;                       
+    margin-bottom: 15px;
+}
+.section-B .pin-box label{ 
+    padding: 15px 15px 0 0;
+ }
+.section-B .keypad{    
+    display: grid;        
+    grid-template-columns: repeat(4, 1fr);    
+    justify-content: center;                     
+    align-items: center;    
+    gap: 8px;
+}
+
+.keypad .key{
+    padding: 12px 15px;
+    border: none;          
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
 
