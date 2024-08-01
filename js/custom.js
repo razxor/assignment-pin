@@ -7,5 +7,24 @@ document.addEventListener('DOMContentLoaded', function () {
         input.value = secretKey;       
     });
 
-   
+    // Keypad manage
+    const pinInput = document.getElementById('pin-input');
+    const keys = document.querySelectorAll('.key');
+
+    keys.forEach(key => {
+        key.addEventListener('click', function () {
+            const keyValue = this.textContent;
+            if (keyValue === 'x') {
+                pinInput.value = pinInput.value.slice(0, -1); // Remove the last character
+            } else if (keyValue === 'Clear') {
+                pinInput.value = ''; 
+            } else if (keyValue === 'Submit') {               
+                alert('PIN Submitted: ' + pinInput.value);
+            } else {
+                if (pinInput.value.length < 6) {
+                    pinInput.value += keyValue; 
+                }
+            }
+        });
+    });
 });
