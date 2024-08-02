@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PIN</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <script type="application/javascript" src="js/custom.js"></script>
 </head>
-<body>
-    <div class="container">
+<body>    
+    <div class="container">        
         <div class="section-A">
             <div class="input-button-wrapper">
                 <input type="number" class="js-pin-output">
@@ -16,26 +24,30 @@
             </div>            
         </div>            
 
-        <div class="section-B">            
-            <div class="pin-box">
-                <label for="pin-input">Enter PIN</label>
-                <input type="number" id="pin-input"">
-            </div>
-            <div class="keypad">
-                <button class="key">1</button>
-                <button class="key">2</button>
-                <button class="key">3</button>
-                <button class="key">4</button>
-                <button class="key">5</button>
-                <button class="key">6</button>
-                <button class="key">7</button>
-                <button class="key">8</button>               
-                <button class="key">9</button>               
-                <button class="key">0</button>               
-                <button class="key">x</button>               
-                <button class="key">Submit</button>               
-                <button class="key">Clear</button>                               
-            </div>           
+        <div class="section-B">  
+            <div class="section-B-wrapper"> 
+                <div class="alert">                
+                </div>          
+                <div class="pin-box">
+                    <label for="pin-input">Enter PIN</label>
+                    <input type="number" id="pin-input"">
+                </div>
+                <div class="keypad">
+                    <button class="key">1</button>
+                    <button class="key">2</button>
+                    <button class="key">3</button>
+                    <button class="key">4</button>
+                    <button class="key">5</button>
+                    <button class="key">6</button>
+                    <button class="key">7</button>
+                    <button class="key">8</button>               
+                    <button class="key">9</button>               
+                    <button class="key">0</button>               
+                    <button class="key bc">x</button>               
+                    <button class="key submit">Submit</button>               
+                    <button class="key clear">Clear</button>                               
+                </div> 
+            </div>                      
         </div>
     </div>    
 </body>
