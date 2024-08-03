@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         alert_box.style.display = 'block';                     
                         alert_box.classList.remove("error");
                         alert_box.classList.add("success");
-                        alert_box.innerHTML = '<i class="fas fa-check-circle"></i> Success! The Secret Key you have entered matched.';
+                        alert_box.innerHTML = '<i class="fa fa-check-circle"></i> Success! The Secret Key you have entered matched.';
                     } else{
                         alert_box.style.display = 'block';   
                         alert_box.classList.remove("success");
