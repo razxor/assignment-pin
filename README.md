@@ -10,12 +10,13 @@ ES6 is the 6th edition of the ECMAScript standard and is a significant update to
 ```javascript
 let x = 10;
 const y = 20;
-
+```
 ## 2. Arrow Functions
 - Shorter syntax for writing functions.
 - Do not have their own this context.
 
 ```javascript
 const add = (a, b) => a + b;
+```
 
 
